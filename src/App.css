@@ -1,38 +1,78 @@
 .App {
-  text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    font-size: 18px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.not-found {
+    padding: 2%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.posts {
+    padding: 5% 20%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.post {
+    padding: 3.3%;
+    border-radius: 10px;
+    border: 1px solid #30363d;
+    background-color: #161b22;
 }
 
-.App-link {
-  color: #61dafb;
+tr:nth-child(even) {
+    background: #1d242d;
+    padding: 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+tr:nth-child(odd) {
+    background: #0d1117;
+    padding: 2px;
+}
+
+a {
+    color: #58a6ff;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #58a6ff;
+}
+
+.chat-gpt{
+    padding: 3.3%;
+    border-radius: 10px;
+    border: 1px solid #30363d;
+    background-color: #0c0f13;
+    font-size: 16px;
+}
+
+.home-link {
+    cursor: pointer;
+    width: fit-content;
+}
+
+@media only screen and (max-width: 768px) {
+    .App {
+        font-size: 16px;
+    }
+    .posts {
+        padding: 0;
+    }
+    .table {
+        margin: 0 auto;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .table {
+        align-items: center;
+    }
+    .not-found {
+        padding: 5% 20%;
+    }
 }
