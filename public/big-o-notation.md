@@ -1,10 +1,12 @@
 <h1 style='margin-top: 0;'><a href='https://en.wikipedia.org/wiki/Big_O_notation'>Big O</a></h1>
 
+Jan 14, 2023
+
 ## Big O is a BIG DEAL!
 
 Big O is a mathematical notation used to describe an algorithm's *time* and *space* requirements as the input size grows. The *n* represents the input.
 
-Solving DSA problems generally means writing a function that accepts an input, performs operations based on that input, and returns a result. The operations performed will contribute to the *time complexity,* and any data stored in memory during the function call contribute to the overall *space complexity*. So, in order to talk about an algorithm's Big O, you should be able to identify the time and space taken up by the operations.
+Solving DSA problems generally means writing a function that accepts an input, performs operations based on that input, and returns a result. The operations performed will contribute to the *time complexity*, and any data stored in memory during the function call contribute to the overall *space complexity*. So, in order to talk about an algorithm's Big O, you should be able to identify the time and space taken up by the operations.
 
 Your understanding of Big O will help you optimize your algorithms for time and space efficiency. Some optimization patterns are easy to recognize, and others make use of mathematical formulas you've neither heard of, nor will ever use again, outside of that particular algorithm's niche...
 
@@ -14,7 +16,7 @@ Here are two tables to refer to. I'll break down each notation below.
 
 &nbsp;
 
-<div class='table' style='width: 100%; display: flex; flex-direction: column; justify-content: center; font-size: 14px; overflow: scroll;'>
+<div class='table' style='display: flex; flex-direction: column; justify-content: center; font-size: 14px; overflow-x: scroll;'>
     <h3>Table 1.1 Big: O</h3>
     <table style='width: 650px;'>
     <tr style='text-align: left; vertical-align: top'>
@@ -86,7 +88,7 @@ Here are two tables to refer to. I'll break down each notation below.
 
 &nbsp;
 
-<div class='table' style='width: 100%; display: flex; flex-direction: column; justify-content: center; font-size: 14px; overflow: scroll;'>
+<div class='table' style='width: 100%; display: flex; flex-direction: column; justify-content: center; font-size: 14px; overflow-x: scroll;'>
 <h3>Table 1.2: Big O Continued</h3>
     <table style='width: 650px;'>
     <tr style='text-align: left; vertical-align: top'>
@@ -207,7 +209,8 @@ Let's say there's a stack of *alphabetized* envelopes containing wedding invitat
 
 Intuitively, you may have already thought to go to the middle or another random spot. If the envelope you found reads *Fumio Kishida*, it may not be the right one, but this means that you *no longer need to search the half of the stack that comes before Fumio Kishida*. The envelopes are already sorted, meaning there is no way for Malkovich to be in the A-K envelopes.
 
-A data structure that requires its elements be sorted in some way is a *Binary Search Tree*, and the nature of a BST means that access, search, insertion, and deletion take O(log n) time and space.
+A data structure that requires its elements be sorted in some way is a *Binary Search Tree*, and the sorted nature of a BST means that access, search, insertion, and deletion take O(log n) time and space. If a tree isn't sorted, it's a regular old tree.
+
 ### Common examples of O(log n) time complexity
 
 - Accessing, searching, inserting, or deleting values in a Binary Search Tree

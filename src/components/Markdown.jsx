@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 import rehypeRaw from 'rehype-raw'
+import Post from './Post'
+import PostFooter from './PostFooter'
 
 const Markdown = ({ file }) => {
     const [content, setContent] = useState('')
@@ -16,9 +18,16 @@ const Markdown = ({ file }) => {
     }, [file])
 
     return (
-        <div className='post'>
-            <ReactMarkdown rehypePlugins={[rehypeRaw]} children={content} />
-        </div>
+        <>
+            {content == '' ? (
+                null
+            ) : (
+                <div className='post'>
+                    <ReactMarkdown rehypePlugins={[rehypeRaw]} children={content} />
+                    <PostFooter />
+                </div>
+            )}   
+        </>
     )
 }
 

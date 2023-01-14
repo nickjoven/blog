@@ -1,25 +1,34 @@
 .App {
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    min-height: 101vh;
     background-color: #0d1117;
     color: #c9d1d9;
     font-size: 18px;
+    line-height: 30px;
 }
 
 .not-found {
     padding: 2%;
+    font-size: 30px;
 }
 
-.posts {
+.post-container {
     padding: 5% 20%;
 }
 
 
 .post {
-    padding: 3.3%;
-    border-radius: 10px;
-    border: 1px solid #30363d;
+    padding: 4% 4% 1%;
     background-color: #161b22;
+}
+
+.post em {
+    font-family: 'Consolas';
+    background-color: #30363d;
+    border-radius: 2px;
+    font-style: normal;
+    padding: 0px 2px;
 }
 
 tr:nth-child(even) {
@@ -54,11 +63,64 @@ a:visited {
     width: fit-content;
 }
 
+.slim {
+    width: fit-content;
+}
+
+.link:hover {
+    color: #58a6ff;
+    cursor: pointer;
+}
+
+.header-icons {
+    width: 180px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+}
+
+.redirect {
+    cursor: pointer;
+    height: 35px;
+}
+
+.header {
+    height: 75px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.home {
+    font-size: 30px;
+    padding: 5% 20%;
+    line-height: normal;
+}
+
+.home p {
+    font-size: 14px;
+}
+
+.post-footer {
+    font-size: 12px;
+    padding: 0px 10%;
+    font-style: italic;
+    background-color: #0d1117;
+    overflow: hidden;
+}
+
 @media only screen and (max-width: 768px) {
     .App {
         font-size: 16px;
     }
-    .posts {
+    .post-container {
         padding: 0;
     }
     .table {
@@ -68,11 +130,28 @@ a:visited {
     }
 }
 
+@media only screen and (min-width: 1180px) {
+    .table::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .table {
         align-items: center;
     }
     .not-found {
         padding: 5% 20%;
+    }
+
+    .post {
+        border-radius: 10px;
+        border: 1px solid #30363d;
+    }
+
+    .header {
+        justify-content: flex-start;
+        padding: 0 20%;
     }
 }

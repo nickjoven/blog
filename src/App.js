@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Header from './components/Header'
 import NotFound from './components/NotFound'
 import Home from './components/Home'
-import Posts from './components/Posts'
+import Post from './components/Post'
 
 const App = () => {
     return (
@@ -12,7 +12,7 @@ const App = () => {
             <Routes>
                 <Route path='*' element={<NotFound />} />
                 <Route path='/' element={<Home />} />
-                <Route path='/big-o-notation' element={<Posts />} />
+                <Route path='/posts/:title' element={<Post />} />
             </Routes>
         </div>
     )
