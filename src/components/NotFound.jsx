@@ -4,7 +4,7 @@ const NotFound = () => {
     const navigate = useNavigate()
 
     const handleClick = () => {
-        navigate('/blog')
+        navigate('/')
     }
 
     return (

@@ -10,9 +10,9 @@ const App = () => {
         <div className="App">    
             <Header />
             <Routes>
-                <Route path='/blog/*' element={<NotFound />} />
-                <Route path='/blog' element={<Home />} />
-                <Route path='/blog/posts/:title' element={<Post />} />
+                <Route path='*' element={<NotFound />} />
+                <Route path='/' element={<Home />} />
+                <Route path='/posts/:title' element={<Post />} />
             </Routes>
         </div>
     )
