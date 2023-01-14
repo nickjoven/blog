@@ -4,7 +4,7 @@ const Header = () => {
     const navigate = useNavigate()
 
     const handleClick = () => {
-        navigate('/')
+        navigate('/blog')
     }
     return (
         <div className='header'>
