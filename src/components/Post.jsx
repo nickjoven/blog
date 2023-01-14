@@ -6,9 +6,8 @@ const Post = () => {
     const params = useParams()
     
     const file = useMemo(() => {
-        return `$/${params.title}.md`
+        return `/${params.title}.md`
     }, [params])
-    console.log(file)
     return (
         <div className='post-container'>
             <Markdown file={file} />
