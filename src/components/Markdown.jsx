@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 import rehypeRaw from 'rehype-raw'
-import Post from './Post'
 import PostFooter from './PostFooter'
 
 const Markdown = ({ file }) => {
@@ -11,7 +10,6 @@ const Markdown = ({ file }) => {
         const getPost = async () => {
             const req = await fetch(file)
             const res = await req.text()
-            console.log(res)
             setContent(res)
         }
         getPost()
@@ -19,7 +17,7 @@ const Markdown = ({ file }) => {
 
     return (
         <>
-            {content == '' ? (
+            {content === '' ? (
                 null
             ) : (
                 <div className='post'>
