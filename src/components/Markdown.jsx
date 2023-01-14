@@ -8,6 +8,7 @@ const Markdown = ({ file }) => {
 
     useEffect(() => {
         const getPost = async () => {
+            console.log(file)
             const req = await fetch(file)
             const res = await req.text()
             setContent(res)
