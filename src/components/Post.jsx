@@ -6,7 +6,7 @@ const Post = () => {
     const params = useParams()
     
     const file = useMemo(() => {
-        return `/${params.title}.md`
+        return `/%PUBLIC_URL%/${params.title}.md`
     }, [params])
     console.log(file)
     return (
