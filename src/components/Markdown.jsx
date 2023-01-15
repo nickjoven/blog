@@ -16,7 +16,7 @@ const Markdown = ({ file }) => {
                 const res = await req.text()
                 setContent(res)
             } else {
-                navigate(file)
+                navigate(`/${file.split('https:/nickjoven.github.io/blog')[1].split('.md')[0]}`)
             }
         }
         getPost()
