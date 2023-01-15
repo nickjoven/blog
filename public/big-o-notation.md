@@ -168,7 +168,7 @@ Let's talk about what it all means!
 
 An algorithm or operation that takes constant time will remain *constant* as the size of the input grows. Algotrithms that can always be solved with the same amount of space--meaning larger inputs won't need any more storage than small inputs--the space is considered constant. There are some hip algorithms that *don't* take up space based on the input--like sorting in place with [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort) or [insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) (this doesn't make them more efficient in all cases, though), but once your algorithm's space requirements scale with the input, you exit O(1) territory.
 
-Let's think of a real world example. If you were to check your phone to get the ID from your last incoming call, the total number of calls wouldn't affect the time it takes. You're only accessing the top of a `stack` of data, and for this task, you aren't concerned with the preceding values.
+Let's think of a real world example. If you were to check your phone to get the ID from your last incoming call, the total number of calls wouldn't affect the time it takes. You're only accessing the top of a *stack* of data, and for this task, you aren't concerned with the preceding values.
 
 ### Common examples of O(1) time complexity:
 
@@ -177,7 +177,7 @@ Let's think of a real world example. If you were to check your phone to get the 
 - Getting the length of an array
 - Setting the element at array[i] to some value
 - Swapping the element at array[i] with array[j]
-- Setting, getting, or removing a key, value pair to a hash, map, or set
+- Setting, getting, or removing a key, value pair in a hash, map, or set
 - Inserting or deleting a node in a linked list (assuming you've already traversed to the node!)
 - Arithmetic operations
 - if/else statements
@@ -194,9 +194,9 @@ Plenty of real world tasks take O(n) time. Consider the task *cancel unwanted su
 
 - Adding an element to the beginning of an array
 - Removing an element from the beginning of an array
-- Removing or replacing elements *anywhere other than the end of an array*
+- Removing or replacing elements `*anywhere other than the end of an array*
 - A loop that traverses from array[0] to array[n]
-- Built-in array methods that involve iterating over every element, like reversing of filtering, or calling *indexOf(element)*
+- Built-in array methods that involve iterating over every element, like reversing, filtering, or calling *indexOf(element)*
 - Traversing a linked list
 
 ## Logarithmic: O(log n)
