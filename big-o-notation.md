@@ -209,7 +209,7 @@ Let's say there's a stack of *alphabetized* envelopes containing wedding invitat
 
 Intuitively, you may have already thought to go to the middle or another random spot. If the envelope you pull from the middle reads *Fumio Kishida*, it may not be the right one, but now you can infer that you *no longer need to search the half of the stack that comes before Fumio Kishida*. The envelopes are already sorted, meaning there is no way for Malkovich to be in the A-K envelopes. This saves you considerable time.
 
-A data structure that requires its elements be sorted in some way is a *Binary Search Tree*, and the sorted nature of a BST means that access, search, insertion, and deletion take O(log n) time and space. If a tree isn't sorted, it's a regular old tree.
+A data structure that requires its elements be sorted in some way is a *Binary Search Tree*, and the sorted nature of a BST means that access, search, insertion, and deletion take O(log n) time and space. If a tree isn't sorted, it's a regular old tree. Some inputs for DSA problems (or even ones you'll encounter out in the wild) are also guaranteed to be sorted, meaning there may be ways to cut down from O(n) to O(log n).
 
 ### Common examples of O(log n) time complexity
 
