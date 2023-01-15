@@ -231,11 +231,11 @@ Everything is unsorted and scattered, and you need an efficient way to put every
 
 ## Quadratic: O(n<sup>2</sup>)
 
-Quadratic space and time complexity often lies at the end brute force implementations. In some cases, you can't optimize beyond O(n<sup>2</sup>) time or space, but as you work with more algorithms, patterns by which you can reduce O(n<sup>2</sup>) complexity will emerge. 
+Quadratic space and time complexity often lies at the end brute force implementations. In some cases, you can't optimize beyond O(n<sup>2</sup>) time or space, but as you work with more algorithms, patterns by which you can reduce O(n<sup>2</sup>) complexity will emerge.
 
 A tell-tale sign of O(n<sup>2</sup>) time complexity is a *nested loop*. For loops within [FOR LOOPS](https://i.imgur.com/7mU8Ymj.jpg).
 
-Let's go back to the modestly-sized wedding example. You're future spouse has actually broken up with you, but you're still financially on the hook for the ceremony for 12,000 guests. In order to stave off financial ruin, you're doing the wedding photography yourself.
+Let's go back to the modestly-sized wedding example. Your future spouse has actually broken up with you, but you're still financially on the hook for the ceremony for 12,000 guests. In order to stave off financial ruin, you're doing the wedding photography yourself.
 
 Your task is to photograph all of your guests in unique pairs, meaning every guest has to be photographed individually with every other guest, plus one with the newlywed couple. This is 12,000<sup>2</sup> photos, or 144,000,000. At a speed of 1 photo per second (the guests are lining up to get this over with "quickly") you'll be there for a little over 4.5 years with no breaks. There's no way of doing this more efficiently without changing the nature of the task.
 
@@ -249,7 +249,7 @@ This algorithm is, of course, blurring lines between human tasks and computer ta
 
 ## Exponential: O(2<sup>n</sup>) & Factorial: O(n!)
 
-These are rare, but not nonexistent. Recursive algorithms like the [Power set algorithm](https://en.wikipedia.org/wiki/Power_set) and [Heap's Algorithm](https://en.wikipedia.org/wiki/Heap%27s_algorithm) use exponential and  factorial time, respectively. The mathematics contribute to the time complexity, and I am mediocre at best at math (failed 4 semesters of trigonometry), so take anything I say here with a chunk of salt... 
+These are rare, but not nonexistent. Recursive algorithms like the [Power set algorithm](https://en.wikipedia.org/wiki/Power_set) and [Heap's Algorithm](https://en.wikipedia.org/wiki/Heap%27s_algorithm) use exponential and  factorial time, respectively. The mathematics contribute to the time complexity, and I am mediocre at best at math (failed 4 semesters of trigonometry), so take anything I say here with a chunk of salt...
 
 You can tell that an algorithm requires factorial time if it involves generating all possible *combinations* or *permutations* of a set of inputs. How many ways can you rearrange the string *"abc"*? The answer 3!, or 3 factorial.
 
