@@ -10,7 +10,7 @@ Solving DSA problems generally means writing a function that accepts an input, p
 
 Your understanding of Big O will help you *optimize* your algorithms for time and space efficiency. Some optimization patterns are easy to recognize, and others make use of mathematical formulas you've neither heard of, nor will ever use again, outside of that particular algorithm's niche...
 
-Big O is tied directly to data structures as well. **Don't listen to that TikTok that said choosing between an array or hash is just personal preference.** There are computational advantages and disadvantages, which you can talk about using Big O. The same concepts that can make algorithms more efficient can also be applied to applications! So, this info isn't completely useless..!
+Big O is tied directly to data structures as well. **Don't listen to that TikTok that said choosing between an array or hash is just personal preference.** There are computational advantages and disadvantages, which you can talk about using Big O. The same concepts that make algorithms more efficient can also be applied to applications! So, this info isn't completely useless..!
 
 Here are two tables to refer to. I'll break down each notation below.
 
