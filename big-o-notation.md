@@ -166,7 +166,7 @@ Let's talk about what it all means!
 
 ## Constant: O(1)
 
-An algorithm or operation that takes constant time will remain *constant* as the size of the input grows. For space complexity, many algorithms will require at least one iteration over an enumerable object, making overall O(1) space rare, but there are some hip algorithms that *don't* take up space based on the input--like sorting in place with [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort) or [insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) (this doesn't make them more efficient in all cases, though).
+An algorithm or operation that takes constant time will remain *constant* as the size of the input grows. Algotrithms that can always be solved with the same amount of space--meaning larger inputs won't need any more storage than small inputs--the space is considered constant. There are some hip algorithms that *don't* take up space based on the input--like sorting in place with [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort) or [insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) (this doesn't make them more efficient in all cases, though), but once your algorithm's space requirements scale with the input, you exit O(1) territory.
 
 Let's think of a real world example. If you were to check your phone to get the ID from your last incoming call, the total number of calls wouldn't affect the time it takes. You're only accessing the top of a `stack` of data, and for this task, you aren't concerned with the preceding values.
 
