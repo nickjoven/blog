@@ -221,11 +221,11 @@ Linearithmic can be thought of as a combination of linear and logarithmic. It's 
 
 We used an example of alphabetized wedding invitations when talking about logarithmic time. Let's now imagine a scenario where you've finally found John Malkovich's wedding invite, but in doing so toppled the 12,000 envelopes.
 
-Everything is unsorted and scattered, and you need an efficient way to put everything back. An approach you might think of immediately is to make 26 stacks, one for each letter of the alphabet, and sort each envelope into its respective stack. Once they're divided by letter, you just need to sort each pile, and then merge them! This is pretty efficient. Sorting by letter into sub-piles involves looking at every letter (an O(n) operation), but once you get to performing the individual piles, the inputs are much smaller than *n*. Many sorting algorithms apply similar concepts.
+Everything is unsorted and scattered, and you need an efficient way to put everything back. An approach you might think of immediately is to make 26 stacks, one for each letter of the alphabet, and sort each envelope into its respective stack. Once they're divided by letter, you just need to sort each pile, and then merge them! This is pretty efficient. Sorting by letter into sub-piles involves looking at every letter (an O(n) operation), but once you get to sorting the individual piles, the inputs are much smaller than *n*. Many sorting algorithms apply similar concepts.
 
 ### Common examples of O(nlog n) time complexity
 
-- Merge Sort and Quick Sort, sorting algorithms that use a divide-and-conquer approach and combines elements linearly
+- Merge Sort and Quick Sort, sorting algorithms that use a divide-and-conquer approach and combine elements linearly
 - Heap Sort, a sorting algorithm that utilizes a heap data structure
 
 ## Quadratic: O(n<sup>2</sup>)
