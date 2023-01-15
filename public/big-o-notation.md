@@ -10,7 +10,7 @@ Solving DSA problems generally means writing a function that accepts an input, p
 
 Your understanding of Big O will help you *optimize* your algorithms for time and space efficiency. Some optimization patterns are easy to recognize, and others make use of mathematical formulas you've neither heard of, nor will ever use again, outside of that particular algorithm's niche...
 
-Big O is tied directly to data structures as well. **Don't listen to that TikTok that said choosing between an array or hash is just personal preference.** there are computational advantages and disadvantages, which you can talk about using Big O. The same concepts that can make algorithms more efficient can also be applied to applications! So, this info isn't completely useless..!
+Big O is tied directly to data structures as well. **Don't listen to that TikTok that said choosing between an array or hash is just personal preference.** There are computational advantages and disadvantages, which you can talk about using Big O. The same concepts that can make algorithms more efficient can also be applied to applications! So, this info isn't completely useless..!
 
 Here are two tables to refer to. I'll break down each notation below.
 
@@ -160,7 +160,7 @@ Here are two tables to refer to. I'll break down each notation below.
 
 &nbsp;
 
-Each time one of those operations is performed on a data structure in your algorithm, you contribute to the time complexity. One of the important methods you'll do is *traversal*, which is enumerating through a data structure. It's O(n) when you're exploring every element, node, or key-value pair in your data structure, since the time it takes increases *linearly* with the size of the data structure.
+Operations like filtering, inserting into, deleting from, traversing through, and so on require some amount of time to complete. Space may be used while any of these operations are performed, and these time and space requirements give us the overall O(n).
 
 Let's talk about what it all means!
 
@@ -168,7 +168,7 @@ Let's talk about what it all means!
 
 An algorithm or operation that takes constant time will remain *constant* as the size of the input grows. For space complexity, many algorithms will require at least one iteration over an enumerable object, making overall O(1) space rare, but there are some hip algorithms that *don't* take up space based on the input--like sorting in place with [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort) or [insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) (this doesn't make them more efficient in all cases, though).
 
-Let's think of a real world example. If you were to check your to get the ID from your last incoming call, the total number of calls wouldn't affect the time it takes. You're only accessing the top of a `stack` of data, and for this task, you aren't concerned with the preceding values.
+Let's think of a real world example. If you were to check your phone to get the ID from your last incoming call, the total number of calls wouldn't affect the time it takes. You're only accessing the top of a `stack` of data, and for this task, you aren't concerned with the preceding values.
 
 ### Common examples of O(1) time complexity:
 
