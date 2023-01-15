@@ -205,9 +205,9 @@ O(log n), not to be confused with O(nlog n) is logarithmic complexity. Thinking 
 
 Let me try to explain that better. There's a classic example using a phone book, but I haven't seen one of those in a decade.
 
-Let's say there's a stack of *alphabetized* envelopes containing wedding invitations on the table. Your spouse-to-be has just informed you that *John Malkovich* changed his address, and you'll need to swap his envelope with a new one. It wouldn't be very efficient to start at the beginning of the stack or the end of the stack, becauase M is somewhere in the middle, and you've invited 12,000 people to your wedding.
+Let's say there's a stack of *alphabetized* envelopes containing wedding invitations on the table. Your spouse-to-be has just informed you that *John Malkovich* changed his address, and you'll need to swap his envelope with a new one. It wouldn't be very efficient to start at the beginning of the stack or the end of the stack, because M is somewhere in the middle, and you've invited 12,000 people to your wedding.
 
-Intuitively, you may have already thought to go to the middle or another random spot. If the envelope you found reads *Fumio Kishida*, it may not be the right one, but this means that you *no longer need to search the half of the stack that comes before Fumio Kishida*. The envelopes are already sorted, meaning there is no way for Malkovich to be in the A-K envelopes.
+Intuitively, you may have already thought to go to the middle or another random spot. If the envelope you pull from the middle reads *Fumio Kishida*, it may not be the right one, you can infer that you *no longer need to search the half of the stack that comes before Fumio Kishida*. The envelopes are already sorted, meaning there is no way for Malkovich to be in the A-K envelopes. This saves you considerable time.
 
 A data structure that requires its elements be sorted in some way is a *Binary Search Tree*, and the sorted nature of a BST means that access, search, insertion, and deletion take O(log n) time and space. If a tree isn't sorted, it's a regular old tree.
 
