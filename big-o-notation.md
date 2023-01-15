@@ -186,9 +186,9 @@ Let's think of a real world example. If you were to check your to get the ID fro
 
 If I were ordering things by complexity, O(log n) would follow O(1), but O(n) is much more common. So, we'll talk about it first.
 
-Think of O(n) as meaning *directly proportional*. The amount of space a library needs *increases* with the number of books the library is going to store. Or, the amount of freezer space a serial murderer needs *increases* as their number of victims grows. O(n) doesn't necessarily mean 1:1--we'll talk about simplifying O(n) below. In terms of math.
+Think of O(n) as meaning *directly proportional*. The amount of space a library needs *increases* with the number of books the library is going to store. Or, the amount of freezer space a serial murderer needs *increases* as their number of victims grows. O(n) doesn't necessarily mean 1:1--we'll talk about simplifying O(n) below.
 
-Plenty of real world tasks take O(n) time. Consider the task *cancel unwanted subscription services*. The amount of time it takes increases linearly with the amount of services you are subscribed to. Trust me, even the [best financial app that allows you to manage your spending with just a tap]() still requires you to go through one service a time, even if it is incredibly fast and easy. #sponsored #ad <small>#if only<small>
+Plenty of real world tasks take O(n) time. Consider the task *cancel unwanted subscription services*. The amount of time it takes increases linearly with the amount of services you are subscribed to. Trust me, even the [best financial app that allows you to manage your spending with just a tap]() still requires you to go through one service a time, even if it is incredibly fast and easy. #sponsored #ad <small>#if only</small>
 
 ### Common examples of O(n) time complexity:
 
@@ -205,9 +205,9 @@ O(log n), not to be confused with O(nlog n) is logarithmic complexity. Thinking 
 
 Let me try to explain that better. There's a classic example using a phone book, but I haven't seen one of those in a decade.
 
-Let's say there's a stack of *alphabetized* envelopes containing wedding invitations on the table. Your spouse-to-be has just informed you that *John Malkovich* changed his address, and you'll need to swap his envelope with a new one. It wouldn't be very efficient to start at the beginning of the stack or the end of the stack, becauase M is somewhere in the middle, and you've invited 12,000 people to your wedding.
+Let's say there's a stack of *alphabetized* envelopes containing wedding invitations on the table. Your spouse-to-be has just informed you that *John Malkovich* changed his address, and you'll need to swap his envelope with a new one. It wouldn't be very efficient to start at the beginning of the stack or the end of the stack, because M is somewhere in the middle, and you've invited 12,000 people to your wedding.
 
-Intuitively, you may have already thought to go to the middle or another random spot. If the envelope you found reads *Fumio Kishida*, it may not be the right one, but this means that you *no longer need to search the half of the stack that comes before Fumio Kishida*. The envelopes are already sorted, meaning there is no way for Malkovich to be in the A-K envelopes.
+Intuitively, you may have already thought to go to the middle or another random spot. If the envelope you pull from the middle reads *Fumio Kishida*, it may not be the right one, you can infer that you *no longer need to search the half of the stack that comes before Fumio Kishida*. The envelopes are already sorted, meaning there is no way for Malkovich to be in the A-K envelopes. This saves you considerable time.
 
 A data structure that requires its elements be sorted in some way is a *Binary Search Tree*, and the sorted nature of a BST means that access, search, insertion, and deletion take O(log n) time and space. If a tree isn't sorted, it's a regular old tree.
 
