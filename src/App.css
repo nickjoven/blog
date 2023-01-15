@@ -92,7 +92,7 @@ a:visited {
 }
 
 .header {
-    height: 75px;
+    height: auto;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -151,6 +151,7 @@ a:visited {
     }
 
     .header {
+        height: 75px;
         justify-content: flex-start;
         padding: 0 20%;
     }
