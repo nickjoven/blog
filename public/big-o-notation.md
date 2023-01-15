@@ -288,7 +288,7 @@ Why do we do this? The mathematical models for Big O maintain the same order as 
 
 ## Representing Big O with multiple variables
 
-We'll see algorithms that might have a time complexity of O(m * n) or a space complexity of O(n + k), where the additional variables represent different inputs, or different data structures used for the algorithm. It's important to understand when this applies, but we'll cover that when we see an example.
+We'll see occasionally see algorithms whose solutions have a time complexity of O(m * n) or a space complexity of O(n + k), where the additional variables represent different inputs or data structures used. It's important to understand when this applies, but we'll cover that when we see an example. Rememner, Big O is about the requirements--it all depends on what the algorithm does on its way to a solution.
 
 &nbsp;
 
