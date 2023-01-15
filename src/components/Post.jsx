@@ -6,7 +6,7 @@ const Post = () => {
     const params = useParams()
     
     const file = useMemo(() => {
-        return `./${params.title}.md`
+        return `https://nickjoven.github.io/blog/${params.title}.md`
     }, [params])
     return (
         <div className='post-container'>
