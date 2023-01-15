@@ -215,34 +215,35 @@ A data structure that requires its elements be sorted in some way is a *Binary S
 
 - Accessing, searching, inserting, or deleting values in a Binary Search Tree
 - Quick Sort, a sorting algorithm that uses a *divide-and-conquer* approach
+
 ## Linearithmic: O(nlog n)
 
 Linearithmic can be thought of as a combination of linear and logarithmic. It's a [portmanteau](http://www.catb.org/jargon/html/L/linearithmic.html) of the two words, isn't that nice?
 
 We used an example of alphabetized wedding invitations when talking about logarithmic time. Let's now imagine a scenario where you've finally found John Malkovich's wedding invite, but in doing so toppled the 12,000 envelopes.
 
-You want an efficient way of putting everything back. Maybe you make 26 stacks, one for each letter of the alphabet, and you put each envelope into one stack. Once you sort each individual stack, you just need to merge them! This is pretty efficient. You did need to look at each envelope to determine what pile it belongs to, but once you have divided your task into sub tasks, the input each sub task is using is going to be smaller than *n*. This is a common theme with complex sorting algorithms!
+Everything is unsorted and scattered, and you need an efficient way to put everything back. An approach you might think of immediately is to make 26 stacks, one for each letter of the alphabet, and sort each envelope into its respective stack. Once they're divided by letter, you just need to sort each pile, and then merge them! This is pretty efficient. Sorting by letter into sub-piles involves looking at every letter (an O(n) operation), but once you get to performing the individual piles, the inputs are much smaller than *n*. Many sorting algorithms apply similar concepts.
 
 ### Common examples of O(nlog n) time complexity
 
-- Merge Sort, a sorting algorithm that uses a divide-and-conquer approach and combines elements linearly
+- Merge Sort and Quick Sort, sorting algorithms that use a divide-and-conquer approach and combines elements linearly
 - Heap Sort, a sorting algorithm that utilizes a heap data structure
 
 ## Quadratic: O(n<sup>2</sup>)
 
-Quadratic space and time complexity often lies at the end brute force implementations. That is to say, many problems that may be solved with an approach that requires quadratically scaling time (and less commonly, space) may *also* be solved in a more efficient way.
+Quadratic space and time complexity often lies at the end brute force implementations. In some cases, you can't optimize beyond O(n<sup>2</sup>) time or space, but as you work with more algorithms, patterns by which you can reduce O(n<sup>2</sup>) complexity will emerge. 
 
-Many operations themselves don't take quadratic time to perform, so the best sign that your code requires quadratic time is *nested loops*.
+A tell-tale sign of O(n<sup>2</sup>) time complexity is a *nested loop*. For loops within [FOR LOOPS](https://i.imgur.com/7mU8Ymj.jpg).
 
 Let's go back to the modestly-sized wedding example. You're future spouse has actually broken up with you, but you're still financially on the hook for the ceremony for 12,000 guests. In order to stave off financial ruin, you're doing the wedding photography yourself.
 
 Your task is to photograph all of your guests in unique pairs, meaning every guest has to be photographed individually with every other guest, plus one with the newlywed couple. This is 12,000<sup>2</sup> photos, or 144,000,000. At a speed of 1 photo per second (the guests are lining up to get this over with "quickly") you'll be there for a little over 4.5 years with no breaks. There's no way of doing this more efficiently without changing the nature of the task.
 
-Once you're done taking the photos, you've been asked to confirm if any two guests are wearing the same outfits so you can call them back for a reshoot. Fortunately, you've have 144,000,000 photos to comb through, so it should be easy, shouldn't it? Well, you *could* perform 144,000,000 checks. But you could also get it done in 12,000. You would just need something to store information about each *outfit* related to each guest.
+Once you're done taking the photos (finally!), you've been asked to confirm if any two guests are wearing the same outfits, in which case you need to call them back for a reshoot. Fortunately, you have 144,000,000 photos to comb through, so it should be easy, shouldn't it? Well... you *could* perform 144,000,000 checks. But you could also get it done in 12,000, a difference of, practially speaking, 144 million. You would just need something to store information about each *outfit* related to each guest as you iterate.
 
 For the sake of making this an easy algorithm, let's assume there is only **one** pair of people who wore the exact same outfit.
 
-Let's say you have the photos separated into folders for each of the 12,000 guests. You could start by looking at the first guest and hashing their outfit and their folder name. For each subsequent guest, perform a hash lookup--which takes O(1) time. If you haven't seen their outfit (meaning no guest you've looked at has worn the same thing) then add their info to the hash. Keep going until someone's outfit is *already in the hash map*. When you find them, your hash map should have the folder of the individual in the matching outfit! In the worst case, the first and last folder contain matching individuals, meaning you need to perform 12,000 operations. But, in a best case, you will do fewer. The worst case of 12,000 is *significantly lower* than the worst case of 144,000,000.
+Say you have the photos separated into folders for each of the 12,000 guests. You could start by looking at the first guest, and writing down their outfit and their name in a table in something you can search quickly. For each subsequent guest, you check if the outfit they're wearing exists in your table--an operation that takes O(1) time. If their outfit is new (meaning it's not in your table) then you add them to the table and keep going. You contiunue until someone's outfit is *already in the table*. Logically, when this occurs, you've found a pair: whoever is in the table under the current outfit, and the current person in your loop. You're done! In the worst case, the matching pair is the people at the very front and very end, as you would have to perform 12,000 operations to find them. But, the worst case of 12,000 is *still significantly lower* than the worst case of 144,000,000.
 
 This algorithm is, of course, blurring lines between human tasks and computer tasks, but hopefully it demonstrates the point. If this optimization seems familiar, it is basically the same as [Two Sum](https://leetcode.com/problems/two-sum/).
 
@@ -273,14 +274,16 @@ Need more Big O? **Here's an [exhaustive list](https://en.wikipedia.org/wiki/Tim
 
 ## [Simplifying Big O](https://medium.com/swlh/simplifying-big-o-expressions-4f7c6059d3d5)
 
-When you're talking about an algorithm's Big O requirements, you will ultimately simplify or boil down the answer by removing constants and small terms.
+When you're talking about an algorithm's Big O requirements, you will ultimately *simplify* or boil down the answer by removing constants and small terms.
 
 O(4n<sup>2</sup>) and O(n<sup>2</sup>) are both represented as O(n<sup>2</sup>).
 O(500) is simplified to O(1). O(2n) is treated like O(n)
 
 O(4n<sup>2</sup> + 2n + 500) is simplified to O(n<sup>2</sup>).
 
-Simplification allows you to describe the complexity that best matches your algorithim, even if you extract some constants or small terms. You may still be asked to identify the operations that contribute to the time complexity, but if you're trying to optimize for O(n) and your solution is O(3n), that's still *far* from O(n<sup>2</sup>).
+The general rule is to ignore constants and smaller terms.
+
+Why do we do this? The mathematical models for Big O maintain the same order as *n* approaches infinity. As you approach infinity, the constants and small terms matter less and less: no matter what *Big Number(n + Big Number)* evaluates to, it is always going to be less than *n(*<sup>*2*</sup>*)*  You may still be asked to identify the operations that contribute to the time complexity, but if you're trying to optimize for O(n) and your solution is O(3n), that's still *far* better than O(n<sup>2</sup>).
 
 &nbsp;
 
@@ -292,7 +295,7 @@ We'll see algorithms that might have a time complexity of O(m * n) or a space co
 
 ## Wrapping Up
 
-This should provide a good baseline for understanding what Big O is. Optimization will be ever-important in programming, and Big O allows us to talk about optimization patterns and pitfalls. After a quick read-through of data structures, we can start implementing these principles while solving the dreaded LeetCode problems. Full disclosure, I only have about 60 problems solved (49% easy, 49% medium, 2% hard) so this won't be the BEST source for solving complex issues. But, if you ever want to teach someone, you only need to be one lesson ahead of them. If you maintain growth, you'll always have something to offer. 
+This should provide a good baseline for understanding what Big O is. Optimization will be ever-important in programming, and Big O allows us to talk about optimization patterns and pitfalls. Some of the examples may have seemed unrealistic in terms of human tasks, but computers and applications will deal with even large data sets. After a quick read-through of data structures, we can start implementing these principles while solving the dreaded LeetCode problems.
 
 &nbsp;
 
