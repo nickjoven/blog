@@ -247,7 +247,7 @@ This algorithm is, of course, blurring lines between human tasks and computer ta
 
 ## Exponential: O(2<sup>n</sup>) & Factorial: O(n!)
 
-These are rare, but not nonexistent. Recursive algorithms like the [Power set algorithm](https://en.wikipedia.org/wiki/Power_set) and [Heap's Algorithm](https://en.wikipedia.org/wiki/Heap%27s_algorithm) use exponential and  factorial time, respectively. The mathematics contribute to the time complexity, and I am mediocre at best at math (failed 4 semesters of trigonometry), so take anything I say here with a chunk of salt...
+These are rare, but they're out there. Recursive algorithms like the [Power set algorithm](https://en.wikipedia.org/wiki/Power_set) and [Heap's Algorithm](https://en.wikipedia.org/wiki/Heap%27s_algorithm) use exponential and  factorial time, respectively. The mathematics contribute to the time complexity, and I am mediocre at best at math (failed 4 semesters of trigonometry), so take anything I say here with a chunk of salt...
 
 You can tell that an algorithm requires factorial time if it involves generating *all possible combinations* or *permutations* of a set of inputs. How many ways can you rearrange the string *"abc"*? The answer, 27, is 3!, or 3 factorial, or 3 * 3 * 3.
 
@@ -287,7 +287,7 @@ Why do we do this? The mathematical models for Big O maintain the same order as 
 
 ## Representing Big O with multiple variables
 
-We'll see occasionally see algorithms whose solutions have a time complexity of O(m * n) or a space complexity of O(n + k), where the additional variables represent different inputs or data structures used. It's important to understand when this applies, but we'll cover that when we see an example. Remember, Big O is about the requirements--it all depends on what the algorithm does on its way to a solution.
+We'll occasionally see algorithms whose solutions have a time complexity of O(m * n) or a space complexity of O(n + k), where the additional variables represent different inputs or data structures used. It's important to understand when this applies, but we'll cover that when we see an example. Remember, Big O is about the requirements--it all depends on what the algorithm does on its way to a solution.
 
 &nbsp;
 
