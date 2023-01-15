@@ -8,7 +8,7 @@ Big O is a mathematical notation used to describe an algorithm's *time* and *spa
 
 Solving DSA problems generally means writing a function that accepts an input, performs operations based on that input, and returns a result. The operations performed will contribute to the *time complexity*, and any data stored in memory during the function call contribute to the overall *space complexity*. So, in order to talk about an algorithm's Big O, you should be able to identify the time and space taken up by the operations.
 
-Your understanding of Big O will help you optimize your algorithms for time and space efficiency. Some optimization patterns are easy to recognize, and others make use of mathematical formulas you've neither heard of, nor will ever use again, outside of that particular algorithm's niche...
+Your understanding of Big O will help you *optimize* your algorithms for time and space efficiency. Some optimization patterns are easy to recognize, and others make use of mathematical formulas you've neither heard of, nor will ever use again, outside of that particular algorithm's niche...
 
 Big O is tied directly to data structures as well. **Don't listen to that TikTok that said choosing between an array or hash is just personal preference.** there are computational advantages and disadvantages, which you can talk about using Big O. The same concepts that can make algorithms more efficient can also be applied to applications! So, this info isn't completely useless..!
 
