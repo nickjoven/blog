@@ -168,7 +168,7 @@ Let's talk about what it all means!
 
 An algorithm or operation that takes constant time will remain *constant* as the size of the input grows. For space complexity, many algorithms will require at least one iteration over an enumerable object, making overall O(1) space rare, but there are some hip algorithms that *don't* take up space based on the input--like sorting in place with [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort) or [insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) (this doesn't make them more efficient in all cases, though).
 
-Let's think of a real world example. If you were to check your phone for the number of the most recent incoming caller, it wouldn't matter if would take the same amount of time whether your call log contained 200 calls or 2000. The most recent should be at the top, resembling a common data structure known as a stack.
+Let's think of a real world example. If you were to check your to get the ID from your last incoming call, the total number of calls wouldn't affect the time it takes. You're only accessing the top of a `stack` of data, and for this task, you aren't concerned with the preceding values.
 
 ### Common examples of O(1) time complexity:
 
