@@ -194,7 +194,7 @@ Plenty of real world tasks take O(n) time. Consider the task *cancel unwanted su
 
 - Adding an element to the beginning of an array
 - Removing an element from the beginning of an array
-- Removing or replacing elements `*anywhere other than the end of an array*
+- Removing or replacing elements *anywhere other than the end of an array*
 - A loop that traverses from array[0] to array[n]
 - Built-in array methods that involve iterating over every element, like reversing, filtering, or calling *indexOf(element)*
 - Traversing a linked list
