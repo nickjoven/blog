@@ -214,7 +214,6 @@ A data structure that requires its elements be sorted in some way is a *Binary S
 ### Common examples of O(log n) time complexity
 
 - Accessing, searching, inserting, or deleting values in a Binary Search Tree
-- Quick Sort, a sorting algorithm that uses a *divide-and-conquer* approach
 
 ## Linearithmic: O(nlog n)
 
@@ -226,7 +225,7 @@ Everything is unsorted and scattered, and you need an efficient way to put every
 
 ### Common examples of O(nlog n) time complexity
 
-- Merge Sort, asorting algorithms that uses a divide-and-conquer approach and combines elements linearly
+- Merge Sort and Quick Sort, sorting algorithms that use a divide-and-conquer approach and combines elements linearly
 - Heap Sort, a sorting algorithm that utilizes a heap data structure
 
 ## Quadratic: O(n<sup>2</sup>)
