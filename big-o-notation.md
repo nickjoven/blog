@@ -167,7 +167,7 @@ Every algorithm will have a time complexity and a space complexity. It's importa
 Let's talk about what it all means!
 ## Constant: O(1)
 
-Algotrithms that can always be solved with the same amount of *space*--meaning larger inputs won't need any more storage than small inputs--the space is considered constant. There are some hip algorithms that *don't* take up space based on the input--like sorting in place with [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort) or [insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) (this doesn't make them more efficient in all cases, though), but once your algorithm's space requirements scale with the input, you exit O(1) territory.
+With algotrithms that can always be solved with the same amount of *space*--meaning larger inputs won't need any more storage than small inputs--the space is considered constant. There are some hip algorithms that *don't* take up additional space based on the input--like sorting in place with [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort) or [insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) (this doesn't make them more efficient in all cases, though), but once your algorithm's space requirements scale with the input, you exit O(1) territory.
 
 Constant time follows the same concept: the time required does not scale with the size of the input. Say I have a bank account with balance *n*. The time it takes to withdraw $20 is the same whether n = $30 or n = $50. (Give or take having insufficient funds or the time it takes to ponder my life decisions)
 ### Common examples of O(1) time complexity:
@@ -287,7 +287,7 @@ Why do we do this? The mathematical models for Big O maintain the same order as 
 
 ## Representing Big O with multiple variables
 
-We'll see occasionally see algorithms whose solutions have a time complexity of O(m * n) or a space complexity of O(n + k), where the additional variables represent different inputs or data structures used. It's important to understand when this applies, but we'll cover that when we see an example. Rememner, Big O is about the requirements--it all depends on what the algorithm does on its way to a solution.
+We'll see occasionally see algorithms whose solutions have a time complexity of O(m * n) or a space complexity of O(n + k), where the additional variables represent different inputs or data structures used. It's important to understand when this applies, but we'll cover that when we see an example. Remember, Big O is about the requirements--it all depends on what the algorithm does on its way to a solution.
 
 &nbsp;
 
