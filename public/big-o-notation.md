@@ -250,7 +250,7 @@ This algorithm is, of course, blurring lines between human tasks and computer ta
 
 These are rare, but not nonexistent. Recursive algorithms like the [Power set algorithm](https://en.wikipedia.org/wiki/Power_set) and [Heap's Algorithm](https://en.wikipedia.org/wiki/Heap%27s_algorithm) use exponential and  factorial time, respectively. The mathematics contribute to the time complexity, and I am mediocre at best at math (failed 4 semesters of trigonometry), so take anything I say here with a chunk of salt...
 
-You can tell that an algorithm requires factorial time if it involves generating all possible *combinations* or *permutations* of a set of inputs. How many ways can you rearrange the string *"abc"*? The answer 3!, or 3 factorial.
+You can tell that an algorithm requires factorial time if it involves generating *all possible combinations* or *permutations* of a set of inputs. How many ways can you rearrange the string *"abc"*? The answer 3!, or 3 factorial.
 
 Exponential time is faster than factorial time, and in some cases like the [Traveling Salesman Problem](https://en.wikipedia.org/wiki/Travelling_salesman_problem) it is an optimization over a brute force approach (that would be O(n!)).
 
