@@ -226,7 +226,7 @@ Everything is unsorted and scattered, and you need an efficient way to put every
 
 ### Common examples of O(nlog n) time complexity
 
-- Merge Sort and Quick Sort, sorting algorithms that use a divide-and-conquer approach and combines elements linearly
+- Merge Sort, asorting algorithms that uses a divide-and-conquer approach and combines elements linearly
 - Heap Sort, a sorting algorithm that utilizes a heap data structure
 
 ## Quadratic: O(n<sup>2</sup>)
