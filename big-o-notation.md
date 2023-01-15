@@ -160,16 +160,16 @@ Here are two tables to refer to. I'll break down each notation below.
 
 &nbsp;
 
-Operations like filtering, inserting into, deleting from, traversing through, and so on require some amount of time to complete. Space may be used while any of these operations are performed, and these time and space requirements give us the overall O(n).
+Operations like filtering, inserting into, deleting from, traversing through, and so on require a certain amount of time to complete. Space may be used while any of these operations are performed, and these time and space requirements give us the overall O(n). 
+
+Every algorithm will have a time complexity and a space complexity. It's important not to confuse the two--you can require O(n<sup>2</sup>) time while using O(1) space, or any other combination of notations.
 
 Let's talk about what it all means!
-
 ## Constant: O(1)
 
-An algorithm or operation that takes constant time will remain *constant* as the size of the input grows. Algotrithms that can always be solved with the same amount of space--meaning larger inputs won't need any more storage than small inputs--the space is considered constant. There are some hip algorithms that *don't* take up space based on the input--like sorting in place with [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort) or [insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) (this doesn't make them more efficient in all cases, though), but once your algorithm's space requirements scale with the input, you exit O(1) territory.
+Algotrithms that can always be solved with the same amount of *space*--meaning larger inputs won't need any more storage than small inputs--the space is considered constant. There are some hip algorithms that *don't* take up space based on the input--like sorting in place with [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort) or [insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) (this doesn't make them more efficient in all cases, though), but once your algorithm's space requirements scale with the input, you exit O(1) territory.
 
-Let's think of a real world example. If you were to check your phone to get the ID from your last incoming call, the total number of calls wouldn't affect the time it takes. You're only accessing the top of a *stack* of data, and for this task, you aren't concerned with the preceding values.
-
+Constant time follows the same concept: the time required does not scale with the size of the input. Say I have a bank account with balance *n*. The time it takes to withdraw $20 is the same whether n = $30 or n = $50. (Give or take having insufficient funds or the time it takes to ponder my life decisions)
 ### Common examples of O(1) time complexity:
 
 - Pushing/popping an element at the end of an array
@@ -181,7 +181,6 @@ Let's think of a real world example. If you were to check your phone to get the 
 - Inserting or deleting a node in a linked list (assuming you've already traversed to the node!)
 - Arithmetic operations
 - if/else statements
-
 ## Linear: O(n)
 
 If I were ordering things by complexity, O(log n) would follow O(1), but O(n) is much more common. So, we'll talk about it first.
@@ -288,7 +287,7 @@ Why do we do this? The mathematical models for Big O maintain the same order as 
 
 ## Representing Big O with multiple variables
 
-We'll see algorithms that might have a time complexity of O(m * n) or a space complexity of O(n + k), where the additional variables represent different inputs, or different data structures used for the algorithm. It's important to understand when this applies, but we'll cover that when we see an example.
+We'll see occasionally see algorithms whose solutions have a time complexity of O(m * n) or a space complexity of O(n + k), where the additional variables represent different inputs or data structures used. It's important to understand when this applies, but we'll cover that when we see an example. Rememner, Big O is about the requirements--it all depends on what the algorithm does on its way to a solution.
 
 &nbsp;
 
