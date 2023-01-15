@@ -16,7 +16,7 @@ const Markdown = ({ file }) => {
                 const res = await req.text()
                 setContent(res)
             } else {
-                navigate('/posts/')
+                navigate(file)
             }
         }
         getPost()
