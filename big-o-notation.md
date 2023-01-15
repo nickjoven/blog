@@ -186,9 +186,9 @@ Let's think of a real world example. If you were to check your to get the ID fro
 
 If I were ordering things by complexity, O(log n) would follow O(1), but O(n) is much more common. So, we'll talk about it first.
 
-Let's get space out of the way. Every common data structure takes up O(n) space by existing. The space taken increases linearly with the size of the data. This doesn't mean that every algorithm needs O(n) space at a minimum, but it does mean that if you iterate over the data structure, you require O(n) space.
+Think of O(n) as meaning *directly proportional*. The amount of space a library needs *increases* with the number of books the library is going to store. Or, the amount of freezer space a serial murderer needs *increases* as their number of victims grows. O(n) doesn't necessarily mean 1:1--we'll talk about simplifying O(n) below. In terms of math.
 
-Plenty of real world tasks take O(n) time. Consider the task *cancel unwanted subscription services*. The amount of time it takes increases linearly with the amount of services you are subscribed to. Trust me, even the [best financial app that allows you to manage your spending with just a tap]() still requires you to go through one service a time, even if it is incredibly fast and easy. #sponsored #ad
+Plenty of real world tasks take O(n) time. Consider the task *cancel unwanted subscription services*. The amount of time it takes increases linearly with the amount of services you are subscribed to. Trust me, even the [best financial app that allows you to manage your spending with just a tap]() still requires you to go through one service a time, even if it is incredibly fast and easy. #sponsored #ad <small>#if only<small>
 
 ### Common examples of O(n) time complexity:
 
@@ -201,7 +201,7 @@ Plenty of real world tasks take O(n) time. Consider the task *cancel unwanted su
 
 ## Logarithmic: O(log n)
 
-O(log n), not to be confused with O(nlog n) is logarithmic complexity. Thinking of logarithmic time or space as fitting somewhere between constant and linear is actually not a bad approach (in my opinion)--because getting to an answer logarithmically means eliminating part of the input as you go.
+O(log n), not to be confused with O(nlog n) is logarithmic complexity. Thinking of logarithmic time or space as fitting somewhere between constant and linear is actually not a bad approach (in my opinion)--because getting to an answer logarithmically means you're eliminating or disregarding part of the input as you go, instead of exploring everything.
 
 Let me try to explain that better. There's a classic example using a phone book, but I haven't seen one of those in a decade.
 
