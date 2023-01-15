@@ -9,7 +9,7 @@ const NotFound = () => {
 
     return (
         <div className='not-found'>
-            <h1>404, O 404!</h1>
+            <h1>404, O, 404!</h1>
             <p>There's nothing to see here.</p>
             <h3>
                 <div className='home-link link' onClick={handleClick}>Take me home</div>
