@@ -187,7 +187,7 @@ If I were ordering things by complexity, O(log n) would follow O(1), but O(n) is
 
 Think of O(n) as meaning *directly proportional*. The amount of space a library needs *increases* with the number of books the library is going to store. Or, the amount of freezer space a serial murderer needs *increases* as their number of victims grows. O(n) doesn't necessarily mean 1:1--we'll talk about simplifying O(n) below.
 
-Plenty of real world tasks take O(n) time. Consider the task *cancel unwanted subscription services*. The amount of time it takes increases linearly with the amount of services you are subscribed to. Trust me, even the [best financial app that allows you to manage your spending with just a tap]() still requires you to go through one service a time, even if it is incredibly fast and easy. #sponsored #ad <small>#if only</small>
+Plenty of real world tasks take O(n) time. Consider the task *cancel unwanted subscription services*. The amount of time it takes increases linearly with the amount of services you are subscribed to. Trust me, even with the [best financial app that allows you to manage your spending with just a tap]() you still have to go one service a time, even if it is incredibly fast and easy. #sponsored #ad <small>#if only</small>
 
 ### Common examples of O(n) time complexity:
 
