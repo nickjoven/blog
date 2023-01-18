@@ -1,4 +1,5 @@
-<h1 style='margin-top: 0;'><a href='https://en.wikipedia.org/wiki/Big_O_notation'>Big O</a></h1>
+# [Big O](https://en.wikipedia.org/wiki/Big_O_notation)
+---
 
 Jan 14, 2023
 
@@ -16,7 +17,7 @@ Here are two tables to refer to. I'll break down each notation below.
 
 &nbsp;
 
-<div class='table' style='display: flex; flex-direction: column; justify-content: center; font-size: 14px; overflow-x: scroll;'>
+<div class='table' style='display: flex; flex-direction: column; justify-content: center; font-size: 14px; overflow-x: auto;'>
     <h3>Table 1.1 Big: O</h3>
     <table style='width: 650px;'>
     <tr style='text-align: left; vertical-align: top'>
@@ -88,7 +89,7 @@ Here are two tables to refer to. I'll break down each notation below.
 
 &nbsp;
 
-<div class='table' style='width: 100%; display: flex; flex-direction: column; justify-content: center; font-size: 14px; overflow-x: scroll;'>
+<div class='table' style='width: 100%; display: flex; flex-direction: column; justify-content: center; font-size: 14px; overflow-x: auto;'>
 <h3>Table 1.2: Big O Continued</h3>
     <table style='width: 650px;'>
     <tr style='text-align: left; vertical-align: top'>
