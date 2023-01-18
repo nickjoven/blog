@@ -5,6 +5,7 @@ import NotFound from './components/NotFound'
 import Home from './components/Home'
 import Post from './components/Post'
 
+
 const App = () => {
     return (
         <div className="App">    

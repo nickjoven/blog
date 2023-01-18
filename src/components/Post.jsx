@@ -1,12 +1,15 @@
 import { useMemo } from 'react'
 import Markdown from './Markdown'
 import { useParams } from 'react-router-dom'
+import { config } from '../Constants'
+
+const publicUrl = config.url.PUBLIC_URL
 
 const Post = () => {
     const params = useParams()
     
     const file = useMemo(() => {
-        return `https://nickjoven.github.io/blog/${params.title}.md`
+        return `${publicUrl}${params.title}.md`
     }, [params])
     return (
         <div className='post-container'>
