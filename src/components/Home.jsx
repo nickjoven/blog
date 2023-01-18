@@ -19,12 +19,15 @@ const Home = () => {
     }
     return (
         <div className='home'>
-            <p>There's not a lot here right now!</p>
+            <p>I'm up to two posts!</p>
             <h2>Articles</h2>
-            {posts?.map((post) => {
+            {posts?.sort((a, b) => new Date(b.postDate) - new Date(a.postDate)).map((post) => {
                 const {title, url, postDate} = post
                 return (
-                    <h3 key={title} className='slim link' onClick={(() => handleClick(url))}>{title}</h3>
+                    <div key='url' className='post-card'>
+                        <h3 key={title} className='slim link post-card-title' onClick={(() => handleClick(url))}>{title}</h3>
+                        <p>{new Date(postDate).toDateString()}</p>
+                    </div>
                 )
             })}
         </div>

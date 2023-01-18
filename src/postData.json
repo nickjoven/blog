@@ -1,9 +1,16 @@
 [
     {
-        "title": "Big O",
+        "title": "Big O!",
         "file": "big-o-notation.md",
         "url": "big-o-notation",
         "postDate": "2023-01-14T21:02:44.313Z",
         "updatedAt": "2023-01-14T21:02:44.313Z"
+    },
+    {
+        "title": "Intro to Recursion - DS&A with NYC Coders",
+        "file": "recursion-with-nyc-coders.md",
+        "url": "recursion-with-nyc-coders",
+        "postDate": "2023-01-18T03:29:43.124Z",
+        "updatedAt": "2023-01-18T03:29:43.124Z"
     }
 ]

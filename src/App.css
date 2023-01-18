@@ -67,6 +67,17 @@ a:visited {
     width: fit-content;
 }
 
+.post-card-title {
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    color: #ecdb8c;
+}
+
+/* .post-card {
+    
+} */
+
 .link:hover {
     color: #58a6ff;
     cursor: pointer;
@@ -108,6 +119,14 @@ a:visited {
     font-size: 14px;
 }
 
+.code-block {
+    font-size: 16px;
+    line-height: normal;
+    padding: 1% 3.3%;
+    background-color: #0d1117;
+    overflow-x: auto;
+}
+
 .post-footer {
     font-size: 12px;
     padding: 0px 10%;
@@ -116,12 +135,14 @@ a:visited {
     overflow: hidden;
 }
 
-@media only screen and (max-width: 768px) {
+
+
+@media only screen and (max-width: 1024px) {
     .App {
-        font-size: 16px;
+        font-size: 17px;
     }
     .post-container {
-        padding: 0;
+        padding: 2%;
     }
     .table {
         margin: 0 auto;
@@ -130,10 +151,14 @@ a:visited {
     }
 }
 
-@media only screen and (min-width: 1180px) {
+
+@media only screen and (min-width: 1368px) {
     .table::-webkit-scrollbar {
         width: 0px;
         background: transparent;
+    }
+    .post-container {
+        min-width: 768px;
     }
 }
 
@@ -154,5 +179,21 @@ a:visited {
         height: 75px;
         justify-content: flex-start;
         padding: 0 20%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .App {
+        font-size: 16px;
+    }
+
+    .post-container {
+        padding: 0;
+    }
+
+    .table {
+        margin: 0 auto;
+        flex-wrap: wrap;
+        align-items: flex-start;
     }
 }
