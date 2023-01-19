@@ -4,8 +4,13 @@
 Jan 17, 2023
 
 <div style='background-color: #0d1117; padding: 1%; border-radius: 5px;'>
-<small>Today was the third of an 11-part-installment of classroom-style lectures hosted by [NYC Coders](https://www.meetup.com/nyc-coders/), a local meetup group. I had a great time but won't bore you with the non-code details!</small>
+<small>Today was the third of an 11-part-installment of classroom-style lectures hosted by <a href='https://www.meetup.com/nyc-coders/'>NYC Coders</a>, a local meetup group. I had a great time but won't bore you with the non-code details!</small>
 </div>
+
+## Links
+
+- [Presentation Slides](https://docs.google.com/presentation/d/1f0K2zmOWhI3fO5HYLIVQ8Yg53UokJGoo76jrXYc_rNM/edit#slide=id.gaf51a63ccd_0_65)
+- [NYC Coders Meetup Group](https://www.meetup.com/nyc-coders/)
 
 ## What is recursion?
 
@@ -117,6 +122,8 @@ const reverseString = (s, left = 0, right = s.length - 1) => {
 
 ## Practice Example 3
 
+Write a function that counts how many steps are required to reach 0 from *num*, given each step divides num by 2 or subtracts 1.
+
 <div class='code-block'>
 
 ```javascript
@@ -134,16 +141,8 @@ const numberOfSteps = (num) => {
 </div>
 
 ### Does the algorithm call upon itself, and converge upon the base case?
-The base case *num === 0* is reached by the mathematical operations performed on *num*. The input number shrinks (by divisions of 2 or subtractions of 1) until it finally reaches zero. Shout out to my new pair programming friends Siddharth and Glen!
+The base case *num === 0* is reached by the mathematical operations performed on *num*. The input number shrinks (by divisions of 2 or subtractions of 1) until it finally reaches zero. Shout out to my pair programming partners Siddharth and Glen!
 
 ## Wrap Up
 
 This was a short post, but I'll save doing a deep dive for later. Recursion isn't always the answer (the call stack has space overhead that you might be able to avoid with an iterative solution) but we'll see situations that benefit from or necessitate recursion with algorithm examples and certain data structures.
-
-
-
-
-
-
-
-
