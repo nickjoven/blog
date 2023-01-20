@@ -12,5 +12,13 @@
         "url": "recursion-with-nyc-coders",
         "postDate": "2023-01-18T03:29:43.124Z",
         "updatedAt": "2023-01-18T03:29:43.124Z"
+    },
+    {
+        "title": "Google Foo: Random Coding Challenge",
+        "file": "google-foobar.md",
+        "url": "google-foobar",
+        "postDate": "2023-01-19T23:55:46.371Z",
+        "updatedAt": "2023-01-19T23:55:46.371Z"
     }
+    
 ]
