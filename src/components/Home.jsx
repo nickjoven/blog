@@ -19,7 +19,7 @@ const Home = () => {
     }
     return (
         <div className='home'>
-            <p>I'm up to two posts!</p>
+            <p>I'm up to THREE posts!</p>
             <h2>Articles</h2>
             {posts?.sort((a, b) => new Date(b.postDate) - new Date(a.postDate)).map((post) => {
                 const {title, url, postDate} = post
